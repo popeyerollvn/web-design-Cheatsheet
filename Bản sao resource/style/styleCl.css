@@ -1,0 +1,44 @@
+h1 {
+	text-align:center;
+	color:grey;
+	background-color: black ;
+}
+h2{
+	text-align: center;
+}
+body{
+
+}
+table{
+	border-collapse: collapse;
+	border:1px solid black;
+
+}
+/* 
+tr {
+	height: 50px;
+	vertical-align: bottom;
+*/
+
+.body{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-transform: capitalize;
+	text-align: left;
+	width: 100%;
+	padding: 10px;
+}
+.body th{
+	background-color: green;
+	padding-top: 12px;
+    padding-bottom: 12px;
+  	background-color: #4CAF50;
+  	color: white;
+  	border:1px solid black;
+  	padding: 5px;
+}
+.body tr:nth-child(even){background-color: #f2f2f2;}
+.body tr:hover {background-color: #ddd;}
+.body td{
+	border: 0.5px solid #ddd;
+	padding: 5px;
+}

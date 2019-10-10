@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- ten cua page + code de tieng viet hien thu dc tren webpage-->
+	<title>Cheat Sheet HTML + CSS </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link href ="resource/style/cheatsheetSTYLE.css" type ="text/css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="head">
+	  <h1>Cheat Sheet HTML + CSS</h1>
+	  <h2 id="xam">Lap Trinh Vien is the way</h2>
+	  <h3>Hạng mục</h3>
+	  <ol class="section">
+	  	<li><a href="#htmltag">html tags</a></li>
+	  	<li><a href="#htmltable">html table</a></li>
+	  	<li><a href="#csstable">css</a></li>
+	  </ol>
+	  <h3>Another Cheat sheet</h3>
+	  <ul>
+	  	<li><a href ="resource/commandline.html " target="_blank">Comman line MacOX Cheat Sheet</a></li>
+	  	
+	  </ul>
+	</div>
+
+		<!-- table tag cho html -->
+		<div class="body" id =htmltag>
+		  <h2><img src= "resource/img/1200px-HTML5_logo_and_wordmark.svg.png" alt= "html logo"height="50" />html tags</h2>
+		  <table>
+		  	<tablehead>
+		  	  <th>TAG</th>
+		  	  <th>Cú Pháp</th>
+		  	  <th>Công Dụng</th>
+		  	  <th>Ví Dụ</th>
+		  	</tablehead>
+
+		  	<tablebody>
+		  		<tr>
+		  			<td>heading</td>
+		  			<td>&lt;h1-h6&gt;"..."&lt;/h1-h6&gt;</td>
+		  			<td>in dòng heading</td>
+		  			<td>&lt;h3&gt;&lt;/h3&gt;</td>
+		  		</tr>
+		  		<tr>
+		  			<td>paragrap</td>
+		  			<td>&lt;p&gt;"..."&lt;/p&gt;</td>
+		  			<td>in đoạn văn</td>
+		  			<td>&lt;p&gt;&lt;/p&gt;</td>
+		  		</tr>
+		  		<tr>
+		  			<td>span</td>
+		  			<td>&lt;span&gt;</td>
+		  			<td>inline style, không cần xuống dòng</td>
+		  			<td>&lt;span <span style= "color:green;">style</span>="color:red;"&gt;"..."&lt;span&gt;</td>
+		  		</tr>
+		  		<tr>
+		  			<td>div</td>
+		  			<td>&lt;div&gt;</td>
+		  			<td>phân chia html thành từng phần</td>
+		  			<td></td>
+		  		</tr>
+		  		<tr>
+		  			<td>id</td>
+		  			<td>id = "..."</td>
+		  			<td>Gắn id cho 1 element html</td>
+		  			<td>&lt;body id = "thân"&gt;</td>
+		  		</tr>
+		  		<tr>
+		  			<td>em</td>
+		  			<td>&lt;em&gt;</td>
+		  			<td>in chữ in nghiêng</td>
+		  			<td>&lt;em&gt;<em>giúp với</em>&lt;/em&gt;</td>
+		  		</tr>
+		  		<tr>
+		  			<td>strong</td>
+		  			<td>&lt;strong&gt;</td>
+		  			<td>in chữ đậm </td>
+		  			<td>&lt;strong&gt;<strong>giúp với</strong>&lt;/strong&gt;</td>
+		  		</tr>
+		  		<tr>
+		  			<td>br</td>
+		  			<td>&lt;br&gt;</td>
+		  			<td>xuống 1 dòng</td>
+		  			<td>tôi muốn xuống dòng &lt;br&gt;<br> đã xuống</td>
+		  		</tr>
+		  		<tr>
+		  			<td>ol</td>
+		  			<td>&lt;ol&gt;</td>
+		  			<td>tạo list có số thứ tự</td>
+		  			<td>&lt;ol&gt;<br>&lt;li&gt;"..."&lt;/li&gt;<br>&lt;/ol&gt;</td>
+		  		</tr>
+		  		<tr>
+		  			<td>ul</td>
+		  			<td>&lt;ul&gt;</td>
+		  			<td>tạo list không có số thứ tự </td>
+		  			<td>&lt;ul&gt;<br>&lt;li&gt;"..."&lt;/li&gt;<br>&lt;/ul&gt;</td>
+		  		</tr>
+		  		<tr>
+		  			<td>img</td>
+		  			<td>&lt;img src =# &gt;</td>
+		  			<td>in ảnh trên html</td>
+		  			<td>&lt;img <span style= "color:green;">src</span>="#" <span style= "color:green;">alt</span>="A field of yellow sunflowers" /&gt;</td>
+		  		</tr>
+		  		<tr>
+		  			<td>video</td>
+		  			<td>&lt;video src =# &gt;</td>
+		  			<td>in video trên html</td>
+		  			<td>&lt;video <span style= "color:green;">src</span>="myVideo.mp4" <span style= "color:green;">width</span>="320" <span style= "color:green;">height</span>="240" controls&gt;
+  Video not supported
+</video></td>
+		  		</tr>
+		  		<tr>
+		  			<td rowspan="4">anchor</td>
+		  			<td rowspan="4">&lt;a&gt;</td>
+		  			<td rowspan="2">gắn link web trên page vào text và hình ảnh ,<span style= "color:green;"> target</span>="_blank" : bật 1 new tab </td>
+		  			<td>&lt;a <span style= "color:green;">href</span>="https://www.wikipedia.org/">This Is A Link To Wikipedia&lt;/a&gt;</td>
+
+		  		</tr>
+		  		<tr>
+		  			<td>
+		  			&lt;a <span style= "color:green;">href</span>="https://en.wikipedia.org/wiki/Opuntia" <span style= "color:green;">target</span>="_blank"&gt;&lt;img src="#" <span style= "color:green;">alt</span>="A red prickly pear fruit"/&gt;&lt;/a&gt;/td>
+		  		</tr>
+
+		  		<tr>
+		  			<td>gắn link 1 file html cùng trong thư mục dùng "./"</td>
+		  			<td>&lt;a <span style= "color:green;">href</span>="./contact.html"&gt;Contact&lt;/a&gt;</td>
+		  		</tr>
+		  		<tr>
+		  			<td>gắn link 1 section lên dùng #id </td>
+		  			<td>&lt;a <span style= "color:green;">href</span>="#id"&gt;&lt;/a&gt;</td>
+		  		</tr>
+		  	</tablebody>
+		  </table>
+		</div>
+<br>
+<br>
+<br>
+		<!--html table-->
+		<div class = "body" id="htmltable">
+			<h2><img src= "resource/img/1200px-HTML5_logo_and_wordmark.svg.png" alt= "html logo"height="50" />Html table</h2>
+			<table>
+
+		  	<tablehead>
+		  	  <th>TAG</th>
+		  	  <th>Cú Pháp</th>
+		  	  <th>Công Dụng</th>
+		  	  <th>Ví Dụ</th>
+		  	</tablehead>
+
+		  	<tablebody>
+		  		<tr>
+		  			<td>table</td>
+		  			<td>&lt;table&gt;"..."&lt;/table&gt;</td>
+		  			<td>Tạo bảng </td>
+		  			<td>&lt;table&gt;&lt;/table&gt;</td>
+		  		</tr>
+		  		<tr>
+		  			<td>table rows</td>
+		  			<td>&lt;tr&gt;"..."&lt;/tr&gt;</td>
+		  			<td>Tạo hàng ngang  </td>
+		  			<td>&lt;tr&gt;&lt;/tr&gt;</td>
+		  		</tr>
+		  		<tr>
+		  			<td>table data</td>
+		  			<td>&lt;td&gt;"..."&lt;/td&gt;</td>
+		  			<td>Tạo data ,nội dung trong hàng  </td>
+		  			<td>&lt;td&gt;&lt;/td&gt;</td>
+		  		</tr>
+		  		<tr>
+		  			<td>colspan rowspan</td>
+		  			<td>&lt;td<span style="color:green";> colspan=""</span>&gt;..."&lt;/td&gt;</td>
+		  			<td>Mở rộng hàng hoặc cột </td>
+		  			<td>&lt;table&gt;&lt;/table&gt;</td>
+		  		</tr>
+		  		<tr>
+		  			<td>table head </td>
+		  			<td>&lt;table&gt;"..."&lt;/table&gt;</td>
+		  			<td rowspan="3">Tạo các phần để bảng dễ nhận biết </td>
+		  			<td>&lt;thead&gt;&lt;/thead&gt;</td>
+		  		</tr>
+		  		<tr>
+		  			<td>table body
+		  			</td>
+		  			<td>&lt;table&gt;"..."&lt;/table&gt;</td>
+		  			
+		  			<td>&lt;tbody&gt;&lt;/tbody&gt;</td>
+		  		</tr>
+		  		<tr>
+		  			<td>table footer</td>
+		  			<td>&lt;tfoot&gt;"..."&lt;/tfoot&gt;</td>
+		  			
+		  			<td>&lt;tfoot&gt;&lt;/tfoot&gt;</td>
+		  		</tr>
+		  	</tablebody>
+		
+			</table>
+		</div>
+<br>
+<br>
+<br>
+		<div class= "body" id ="csstable">
+			<h2><img src= "resource/img/CSS3_logo_and_wordmark.svg.png" alt= "css logo"height="50" />css table</h2>
+			<table>
+
+		  	<tablehead>
+		  	  <th class="tag">TAG</th>
+		  	  <th class= "syntax">Cú Pháp</th>
+		  	  <th >Công Dụng</th>
+		  	  <th>Ví Dụ</th>
+		  	</tablehead>
+		  	<tr>
+		  			<td>link</td>
+		  			<td>&lt;link href="style.css" type="text/css" rel="stylesheet"/&gt;</td>
+		  			<td>liên kết với các file khác</td>
+		  			<td></td>
+		  		</tr>
+
+		  		<tr>
+		  			<td>inline style</td>
+		  			<td>&lt;p style="color: red;"&gt;I'm learning to code!&lt;/p&gt;</td>
+		  			<td>thay đổi style trực tiếp trên html</td>
+		  			<td></td>
+		  		</tr>
+
+		  		<tr>
+		  			<td>tag name</td>
+		  			<td>"tag name" {...vd: color:black;}</td>
+		  			<td>tạo style cho tag</td>
+		  			<td>p{...}</td>
+		  		</tr>
+
+		  		<tr>
+		  			<td>class</td>
+		  			<td>."tên class"{...}</td>
+		  			<td>tạo style cho class</td>
+		  			<td>.header"</td>
+		  		</tr>
+
+		  		<tr>
+		  			<td>Multiple Classes</td>
+		  			<td></td>
+		  			<td>dùng nhiều style</td>
+		  			<td><span style="color:red;">html :</span> &lt;h1 class="green bold"&gt; ... &lt;/h1&gt;
+
+		  				<span style="color:red;">css :</span>.green {
+  color: green;
+}
+.bold {
+  font-weight: bold;
+}
+</td>
+		  		</tr>
+
+		  		<tr>
+		  			<td>ID Name</td>
+		  			<td>#id{...}</td>
+		  			<td></td>
+		  			<td></td>
+		  		</tr>
+
+		  		<tr>
+		  			<td>Chaining Selectors</td>
+		  			<td>tag.class</td>
+		  			<td>h1.special {
+
+}</td>
+		  			<td>The code above would select only the h1 elements that have a class of special. If a p element also had a class of special, the rule in the example would not style the paragraph.</td>
+		  		</tr>
+		  		
+		  		<tr>
+		  			<td>Nested Elements</td>
+		  			<td></td>
+		  			<td></td>
+		  			<td>.main-list li {}</td>
+		  		</tr>
+
+		  		<tr>
+		  			<td>Important</td>
+		  			<td>!important</td>
+		  			<td></td>
+		  			<td></td>
+		  		</tr>
+
+		  		<tr>
+		  			<td>Multiple Selectors</td>
+		  			<td></td>
+		  			<td></td>
+		  			<td></td>
+		  		</tr>
+
+		  		<tr>
+		  			<td>font-family</td>
+		  			<td>font-family:...;</td>
+		  			<td>thay đổi phông chữ</td>
+		  			<td>font-family:arial</td>
+		  		</tr>
+
+		  		<tr>
+		  			<td>Font Size</td>
+		  			<td>font-size: ..px;</td>
+		  			<td>thay đổi size chữ</td>
+		  			<td>font-size: 18px;</td>
+		  		</tr>
+
+		  		<tr>
+		  			<td>Font Weight</td>
+		  			<td></td>
+		  			<td>thay đổi độ dày chữ</td>
+		  			<td>font-weight: bold;</td>
+		  		</tr>
+
+		  		<tr>
+		  			<td>Text Align</td>
+		  			<td></td>
+		  			<td>căn trái giữa phải </td>
+		  			<td>h1 {
+  text-align: right;
+}</td>
+		  		</tr>
+
+		  		<tr>
+		  			<td>Opacity</td>
+		  			<td>opacity : 0.0-1.0</td>
+		  			<td> đổi độ trong suốt</td>
+		  			<td>.overlay {
+  opacity: 0.5;
+}</td>
+		  		</tr>
+
+		  		<tr>
+		  			<td>Background Image
+</td>
+		  			<td>  background-image: url("...");
+</td>
+		  			<td>đổi hình nền</td>
+		  			<td>.main-banner {
+  background-image: url("https://www.example.com/image.jpg");
+}</td>
+		  		</tr>
+		  		
+p {</td>
+		  		</tr>
+		
+}</td>
+		  		</tr>
+		  	
+		  	<tr>
+		  			<td>font-style</td>
+		  			<td></td>
+		  			<td>đổi kiểu dáng chữ</td>
+		  			<td>h3 {
+  font-style: italic;
+}</td>
+		  		</tr>
+		  	
+		  	<tr>
+		  			<td>word-spacing</td>
+		  			<td></td>
+		  			<td>thay đổi độ rộng của từng chữ</td>
+		  			<td>h1 {
+  word-spacing: 0.3em;
+}</td>
+		  		</tr>
+		  	
+		  	<tr>
+		  			<td>letter-spacing</td>
+		  			<td></td>
+		  			<td>thay đổi độ rộng của từng ký tự</td>
+		  			<td>h1 {
+  letter-spacing: 0.3em;
+}</td>
+		  		</tr>
+		  	
+		  	<tr>
+		  			<td>text-transform</td>
+		  			<td></td>
+		  			<td>thay đổi dạng chữ</td>
+		  			<td>1 {
+  text-transform: uppercase;
+}</td>
+		  		</tr>
+		  	
+		  	
+		  		</tr>
+		  	<tr>
+		  			<td>line-height</td>
+		  			<td></td>
+		  			<td>độ cao của dòng</td>
+		  			<td>p {
+  line-height: 1.4;
+}</td>
+		  		</tr>
+		  	
+		  	<tr>
+		  			<td>fall back font</td>
+		  			<td></td>
+		  			<td>thay đổi phông chữ , nếu phông đó k đc cài thì đổi sang các phông sau</td>
+		  			<td>h1 {
+  font-family: "Garamond", "Times", serif;
+}</td>
+		  		</tr>
+		  	
+		  	
+
+		  	<tablebody>
+		  		
+
+		  	</tablebody>
+		</div>	
+	</table>
+</div>
+
+<br>
+<br>
+<br>
+
+			<h3>Css.5 Layout and Positioning</h3>
+			<div class= "body" id ="csstable">
+			<h2><img src= "resource/img/CSS3_logo_and_wordmark.svg.png" alt= "css logo"height="50" />css layout and position</h2>
+			<table>
+
+		  	<tablehead>
+		  	  <th class="tag">TAG</th>
+		  	  <th class= "syntax">Cú Pháp</th>
+		  	  <th >Công Dụng</th>
+		  	  <th>Ví Dụ</th>
+		  	</tablehead>
+		  	<tr>
+		  			<td class="tag">border-radius</td>
+		  			<td class="cu phap">border-radius: 5px;</td>
+		  			<td class="cong dung">bo vien border</td>
+		  			<td class="vi du">border-radius: 5px;</td>
+		  		</tr>
+
+		  		<tr>
+		  			<td class="tag">overflow</td>
+		  			<td class="cu phap">hidden,scroll,visable(default)</td>
+		  			<td class="cong dung">The overflow property controls what happens to content that spills, or overflows, outside its box</td>
+		  			<td class="vi du"></td>
+		  		</tr>
+	
+
+	<tr>
+		  			<td class="tag">visibility</td>
+		  			<td class="cu phap">  visibility: hidden; visible;
+</td>
+		  			<td class="cong dung">tang hinh </td>
+		  			<td class="vi du">An element with display: none will be completely removed from the web page. An element with visibility: hidden, however, will not be visible on the web page, but the space reserved for it will.</td>
+		  		</tr>
+	
+
+	<tr>
+		  			<td class="tag">position relative</td>
+		  			<td class="cu phap">position: relative;</td>
+		  			<td class="cong dung">position an element relative to its default static position on the web page.</td>
+		  			<td class="vi du">   position: relative;<br>
+  top: 20px;<br>
+  left: 50px;<br>will be moved down 20 pixels and to the right 50 pixels from its default static position
+</td>
+		  		</tr>
+	
+				<tr>
+		  			<td class="tag">Position: Absolute
+</td>
+		  			<td class="cu phap">Position: Absolute;</td>
+		  			<td class="cong dung">When an element’s position is set to absolute all other elements on the page will ignore the element and act like it is not present on the page</td>
+		  			<td class="vi du"></td>
+		  		</tr>
+		  			<tr>
+		  			<td class="tag">Position: Fixed
+</td>
+		  			<td class="cu phap">  position: fixed;
+</td>
+		  			<td class="cong dung">the element will scroll with the rest of the document when a user scrolls.</td>
+		  			<td class="vi du">  position: fixed;
+</td>
+		  		</tr>
+	<tr>
+		  			<td class="tag">display</td>
+		  			<td class="cu phap"></td>
+		  			<td class="cong dung"></td>
+		  			<td class="vi du">  display: block;<br>  display: inline;<br>display: inline-block
+
+
+
+</td>
+		  		</tr>
+	
+
+	<tr>
+		  			<td class="tag">z-index
+</td>
+		  			<td class="cu phap">z-index: (-n) or n integer;</td>
+		  			<td class="cong dung">The z-index property controls how far “back” or how far “forward” an element should appear on the web page when elements overlap</td>
+		  			<td class="vi du">  z-index: 1;
+</td>
+		  		</tr>
+	
+
+	<tr>
+		  			<td class="tag">float</td>
+		  			<td class="cu phap">  float: left or right;
+</td>
+		  			<td class="cong dung">left - this value will move, or float, elements as far left as possible.
+right - this value will move elements as far right as possible.</td>
+		  			<td class="vi du">  float: right;<br>This works for static and relative positioned elements
+</td>
+		  		</tr>
+	
+
+	
+	
+	
+
+	</table>
+</div>
+<br>
+<br>
+<br>
+
+			<h3>Css.7 flex box</h3>
+			<div class= "body" id ="csstable">
+			<h2><img src= "resource/img/CSS3_logo_and_wordmark.svg.png" alt= "css logo"height="50" />css flexbox</h2>
+			<table>
+
+		  	<tablehead>
+		  	  <th class="tag">TAG</th>
+		  	  <th class= "syntax">Cú Pháp</th>
+		  	  <th >Công Dụng</th>
+		  	  <th>Ví Dụ</th>
+		  	</tablehead>
+		  	<tr>
+		  			<td class="tag"></td>
+		  			<td class="cu phap"></td>
+		  			<td class="cong dung"></td>
+		  			<td class="vi du"></td>
+		  		</tr><tr>
+		  			<td class="tag"></td>
+		  			<td class="cu phap"></td>
+		  			<td class="cong dung"></td>
+		  			<td class="vi du"></td>
+		  		</tr><tr>
+		  			<td class="tag"></td>
+		  			<td class="cu phap"></td>
+		  			<td class="cong dung"></td>
+		  			<td class="vi du"></td>
+		  		</tr><tr>
+		  			<td class="tag"></td>
+		  			<td class="cu phap"></td>
+		  			<td class="cong dung"></td>
+		  			<td class="vi du"></td>
+		  		</tr><tr>
+		  			<td class="tag"></td>
+		  			<td class="cu phap"></td>
+		  			<td class="cong dung"></td>
+		  			<td class="vi du"></td>
+		  		</tr>
+		  	</table>
+		  </div>
+
+		  <br>
+<br>
+<br>
+
+			<h3>Css.8 Font Awesome</h3>
+			<div class= "body" id ="csstable">
+			<h2><img src= "resource/img/CSS3_logo_and_wordmark.svg.png" alt= "css logo"height="50" />css Font Awesome</h2>
+			<table>
+
+		  	<tablehead>
+		  	  <th class="tag">TAG</th>
+		  	  <th class= "syntax">Cú Pháp</th>
+		  	  <th >Công Dụng</th>
+		  	  <th>Ví Dụ</th>
+		  	</tablehead>
+		  	<tr>
+		  			<td class="tag"></td>
+		  			<td class="cu phap"></td>
+		  			<td class="cong dung"></td>
+		  			<td class="vi du"></td>
+		  		</tr><tr>
+		  			<td class="tag"></td>
+		  			<td class="cu phap"></td>
+		  			<td class="cong dung"></td>
+		  			<td class="vi du"></td>
+		  		</tr><tr>
+		  			<td class="tag"></td>
+		  			<td class="cu phap"></td>
+		  			<td class="cong dung"></td>
+		  			<td class="vi du"></td>
+		  		</tr><tr>
+		  			<td class="tag"></td>
+		  			<td class="cu phap"></td>
+		  			<td class="cong dung"></td>
+		  			<td class="vi du"></td>
+		  		</tr><tr>
+		  			<td class="tag"></td>
+		  			<td class="cu phap"></td>
+		  			<td class="cong dung"></td>
+		  			<td class="vi du"></td>
+		  		</tr>
+		  	</table>
+		  </div>
+</body>
+</html>
